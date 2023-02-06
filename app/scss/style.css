@@ -1,0 +1,191 @@
+/* typography */
+/* colors */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+@media (max-width: 37.5em) {
+  body {
+    margin-right: 1.625rem;
+    margin-left: 1.625rem;
+  }
+}
+
+main {
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 1.25rem;
+  max-width: 100%;
+  padding-left: 2.5rem;
+}
+@media (max-width: 37.5em) {
+  main {
+    padding-left: 1.25rem;
+  }
+}
+@media (min-width: 37.5em) {
+  main {
+    width: 27rem;
+    height: 27rem;
+  }
+}
+
+h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+
+p, span {
+  color: hsl(216deg, 12%, 54%);
+}
+
+@media (min-width: 37.5em) {
+  p {
+    padding-right: 3.125rem;
+  }
+}
+
+.icon_star {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.circle {
+  background: hsl(216deg, 12%, 54%);
+  border-radius: 50%;
+  display: inline-block;
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-top: 1.875rem;
+}
+
+.user_rating_button {
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 50%;
+  border: none;
+  margin-right: 0.3125rem;
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(213deg, 19%, 18%);
+}
+@media (min-width: 37.5em) {
+  .user_rating_button {
+    margin-right: 1.25rem;
+  }
+}
+
+.user_rating_button:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.submit_button {
+  background-color: hsl(25deg, 97%, 53%);
+  border-radius: 3.125rem;
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  height: 3.0625rem;
+  width: 21.25rem;
+  text-transform: uppercase;
+}
+@media (max-width: 37.5em) {
+  .submit_button {
+    height: 2.9375rem;
+    width: 17.625rem;
+    margin-bottom: 1.1875rem;
+  }
+}
+
+.submit_button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+@media (min-width: 37.5em) {
+  .user_rating {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .user_rating {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .thank_you_state {
+    padding-left: 0rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .thank_you_state {
+    padding-left: 0rem;
+  }
+}
+
+.illustration_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 2.5rem;
+}
+
+.rating_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+@media (max-width: 37.5em) {
+  .rating_container {
+    border-radius: 3.125rem;
+    height: 1.3125rem;
+    width: 10.875rem;
+  }
+}
+
+.rating,
+.thank_you,
+.appreciation_paragraphy {
+  text-align: center;
+  padding-right: 0rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.rating {
+  color: hsl(25deg, 97%, 53%);
+}
+
+.thank_you {
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media (min-width: 37.5em) {
+  .appreciation_paragraphy {
+    padding-left: 2.8125rem;
+    padding-right: 2.812rem;
+  }
+}/*# sourceMappingURL=style.css.map */

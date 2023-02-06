@@ -1,0 +1,169 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $very_dark_blue;
+    font-family: $font_family;
+    font-size: $font_size;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    @include mobile{
+        margin-right: 1.625rem;
+        margin-left: 1.625rem;
+    }
+}
+
+main{
+    background-color: $dark_blue;
+    border-radius: 1.25rem;
+    max-width: 100%;
+    padding-left: 2.5rem;
+    @include mobile{
+        padding-left: 1.25rem;
+    }
+    @include desktop{
+        width: 27rem;
+        height: 27rem;
+    }
+}
+
+h1{
+    color: $white;
+}
+
+p,span{
+    color: $medium_grey;
+}
+
+p{
+    @include desktop{
+        padding-right: 3.125rem;
+    }
+}
+
+.icon_star{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.circle{
+    background:$medium_grey;
+    border-radius: 50%;
+    display: inline-block;
+    height: 3.125rem;
+    width: 3.125rem;
+    margin-top: 1.875rem;
+}
+
+.user_rating_button{
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 50%;
+    border: none;
+    margin-right: 0.3125rem;
+    background-color: $medium_grey;
+    color: $dark_blue;
+    @include desktop{
+        margin-right: 1.25rem;
+    }
+}
+.user_rating_button:hover{
+    background-color: $primary_color;
+    color: $white;
+}
+
+.submit_button{
+    background-color: $primary_color;
+    border-radius: 3.125rem;
+    border: none;
+    color: $white;
+    height: 3.0625rem;
+    width: 21.25rem;
+    text-transform: uppercase;
+    @include mobile{
+        height: 2.9375rem;
+        width: 17.625rem;
+        margin-bottom: 1.1875rem;
+    }
+}
+.submit_button:hover{
+    background-color: $white;
+    color:$primary_color;
+}
+
+.user_rating{
+    @include desktop{
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
+    }
+    @include mobile{
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
+.thank_you_state{
+    @include desktop{
+        padding-left: 0rem;
+    }
+    @include mobile{
+        padding-left: 0rem;
+    }
+}
+
+.illustration_image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2.5rem;
+}
+
+.rating_container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    @include mobile{
+        border-radius: 3.125rem;
+        height: 1.3125rem;
+        width: 10.875rem;
+    }
+}
+
+.rating, 
+.thank_you, 
+.appreciation_paragraphy{
+    text-align: center;
+    padding-right: 0rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.rating{
+    color: $primary_color;
+}
+.thank_you{
+    color: $white;
+}
+.appreciation_paragraphy{
+    @include desktop{
+        padding-left: 2.8125rem;
+        padding-right: 2.812rem;
+    }
+}
