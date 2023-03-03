@@ -17,7 +17,7 @@
   <main class="rating_state" id="state">
     <!-- Rating state start -->
     <span class="circle">
-      <img src="./images/icon-star.svg" class="icon_star" alt="icon-star">
+      <img src="./images/icon-star.svg" class="icon_star" alt="">
     </span>
 
     <h1>How did we do?</h1>
@@ -26,15 +26,28 @@
       to help us improve our offering!
     </p>
 
-    <div class="user_rating" id="buttonGroup">
-      <button type="button" class="user_rating_button" value="1">1</button>
-      <button type="button" class="user_rating_button" value="2">2</button>
-      <button type="button" class="user_rating_button" value="3">3</button>
-      <button type="button" class="user_rating_button" value="4">4</button>
-      <button type="button" class="user_rating_button" value="5">5</button>
-    </div>
+    <form id="wrapper" class="rating_form">
+      <fieldset id="rating_selection" class="field">
+        <legend class="hide_legend">Please select a rating</legend>
+        <div class="radio">
+          <input class="radio_input" type="radio" name="rating" id="one" value="1">
+          <label class="radio_label" for="one">1</label>
 
-    <button type="submit" class="submit_button" id="display">Submit</button>
+          <input class="radio_input" type="radio" name="rating" id="two" value="2">
+          <label class="radio_label" for="two">2</label>
+
+          <input class="radio_input" type="radio" name="rating" id="three" value="3">
+          <label class="radio_label" for="three">3</label>
+
+          <input class="radio_input" type="radio" name="rating" id="four" value="4">
+          <label class="radio_label" for="four">4</label>
+
+          <input class="radio_input" type="radio" name="rating" id="five" value="5">
+          <label class="radio_label" for="five">5</label>
+        </div>
+      </fieldset>
+      <button type="submit" class="submit_button" id="display">Submit</button>
+    </form>
     <!-- Rating state end -->
   </main>
 
@@ -53,6 +66,7 @@
   </main>
 
   <script src="./app/js/script.js"></script>
+
 </body>
 
 </html>
