@@ -1,32 +1,18 @@
 let ratingState = document.getElementById("state");
 let thankYouState = document.getElementById("thanks");
-let displayButton = document.getElementById("display");
-displayButton.addEventListener("click", displayThankYouPage);
 
-function displayThankYouPage() {
+let form = document.querySelector(".rating_form");
+form.addEventListener("submit", (ev) => {
+    ev.preventDefault();
     ratingState.hidden = true;
     thankYouState.hidden = false;
-}
 
-let btnList = document.querySelectorAll(".user_rating_button");
-for (let index = 0; index < btnList.length; index++) {
-    document.querySelectorAll(".user_rating_button")[index].
-        addEventListener("click", function () {
-            if (btnList[index].textContent === '1') {
-                let el = document.getElementById("rate").innerHTML =
-                    `You selected ${btnList[index].textContent} out of 5`;
-            } else if (btnList[index].textContent === '2') {
-                let el = document.getElementById("rate").innerHTML =
-                    `You selected ${btnList[index].textContent} out of 5`;
-            } else if (btnList[index].textContent === '3') {
-                let el = document.getElementById("rate").innerHTML =
-                    `You selected ${btnList[index].textContent} out of 5`;
-            } else if (btnList[index].textContent === '4') {
-                let el = document.getElementById("rate").innerHTML =
-                    `You selected ${btnList[index].textContent} out of 5`;
-            } else {
-                let el = document.getElementById("rate").innerHTML =
-                    `You selected ${btnList[index].textContent} out of 5`;
-            }
-        })
-}
+    let radio_buttons = document.querySelectorAll('input[name="rating"]');
+
+    for (let index = 0; index < radio_buttons.length; index++) {
+        if (radio_buttons[index].checked) {
+            document.getElementById("rate").innerHTML =
+                `You selected ${radio_buttons[index].value} out of 5`;
+        }
+    }
+});
