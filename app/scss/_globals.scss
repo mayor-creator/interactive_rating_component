@@ -52,6 +52,7 @@ p{
     }
 }
 
+
 .icon_star{
     display: block;
     margin-left: auto;
@@ -63,29 +64,12 @@ p{
 }
 
 .circle{
-    background:$medium_grey;
+    background-color: hsl(213, 19%, 21%);
     border-radius: 50%;
     display: inline-block;
     height: 3.125rem;
     width: 3.125rem;
     margin-top: 1.875rem;
-}
-
-.user_rating_button{
-    height: 3.125rem;
-    width: 3.125rem;
-    border-radius: 50%;
-    border: none;
-    margin-right: 0.3125rem;
-    background-color: $medium_grey;
-    color: $dark_blue;
-    @include desktop{
-        margin-right: 1.25rem;
-    }
-}
-.user_rating_button:hover{
-    background-color: $primary_color;
-    color: $white;
 }
 
 .submit_button{
@@ -96,9 +80,10 @@ p{
     height: 3.0625rem;
     width: 21.25rem;
     text-transform: uppercase;
+    cursor: pointer;
     @include mobile{
         height: 2.9375rem;
-        width: 17.625rem;
+        width: 18.375rem;
         margin-bottom: 1.1875rem;
     }
 }
@@ -107,15 +92,39 @@ p{
     color:$primary_color;
 }
 
-.user_rating{
-    @include desktop{
-        margin-top: 1.875rem;
-        margin-bottom: 1.875rem;
-    }
+.field{
+    border: 0 none;
+    padding: 0rem;
+    margin: 1.875rem 0rem 1.875rem 0rem;
+}
+
+.hide_legend{
+    display: none;
+}
+
+.radio_input {
+    display: none;
+}
+
+.radio_label{
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 21%);
+    color: $medium_grey;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 0.9375rem;
     @include mobile{
-        margin-top: 1.25rem;
-        margin-bottom: 1.25rem;
+        margin-right: 0.3125rem;
     }
+}
+
+.radio_input:checked + .radio_label{
+    background-color: $primary_color;
+    color: $white;
 }
 
 .thank_you_state{
@@ -155,12 +164,21 @@ p{
     margin-bottom: 1.25rem;
 }
 
+.rating_container{
+    border-radius: 3.125rem;
+    background-color:  hsl(213, 19%, 21%);
+    height: 2.625rem;
+    width: 12.75rem;
+}
 .rating{
     color: $primary_color;
+    padding-top: 0.625rem;
 }
+
 .thank_you{
     color: $white;
 }
+
 .appreciation_paragraphy{
     @include desktop{
         padding-left: 2.8125rem;
